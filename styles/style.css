@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "My_Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #010101;
+  color: #fff;
+}
+
+#hero {
+  position: relative;
+}
+
+/* #about {
+  height: 100vh;
+} */
+
+.layers {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.layer__content {}
+
+.layer__caption {}
+
+.layer__title {}
+
+.layer {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.layer__base {
+  transform: translate3d(0, calc(var(--scroll-top) / 4), 0);
+}
+
+.layer__middle {
+  transform: translate3d(0, calc(var(--scroll-top) / 6), 0);
+}
+
+.layer__front {}
+
+.about__layer {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.about__content {}
+
+.about__title {}
+
+.about__subtitle {}
