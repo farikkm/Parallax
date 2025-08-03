@@ -11,30 +11,38 @@
 
 <body>
 
-  <main>
-    <section id="hero">
-      <div class="layers">
-        <div class="layer__content">
-          <span class="layer__caption">Welcome to Paralax</span>
-          <h1 class="layer__title">Fairy Forest</h1>
-        </div>
+  <div class="wrapper">
+    <div class="container">
+      <main>
+        <section id="hero">
+          <div class="layers">
+            <div class="layer__content">
+              <span class="layer__caption">Welcome to Paralax</span>
+              <h1 class="layer__title">Fairy Forest</h1>
+            </div>
 
-        <div class="layer layer__base" style="background-image: url(./img/layer-base.png);"></div>
-        <div class="layer layer__middle" style="background-image: url(./img/layer-middle.png);"></div>
-        <div class="layer layer__front" style="background-image: url(./img/layer-front.png);"></div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="about__layer" style="background-image: url(./img/dungeon.jpg);">
-        <div class="about__content">
-          <h2 class="about__title">About Section</h2>
-          <p class="about__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis corporis repudiandae nihil pariatur corrupti et expedita tempore? Fuga eaque id cupiditate nihil quae iste repudiandae ea iusto voluptatem, at voluptatum pariatur ipsum?</p>
-        </div>
-      </div>
-    </section>
-  </main>
+            <div class="layer layer__base" style="background-image: url(./img/layer-base.png);"></div>
+            <div class="layer layer__middle" style="background-image: url(./img/layer-middle.png);"></div>
+            <div class="layer layer__front" style="background-image: url(./img/layer-front.png);"></div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="about__layer" style="background-image: url(./img/dungeon.jpg);">
+            <div class="about__content">
+              <h2 class="about__title">About Section</h2>
+              <p class="about__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis corporis
+                repudiandae nihil pariatur corrupti et expedita tempore? Fuga eaque id cupiditate nihil quae iste
+                repudiandae ea iusto voluptatem, at voluptatum pariatur ipsum?</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 
-
+  <script defer src="./libs/gsap/gsap.min.js"></script>
+  <script defer src="./libs/gsap/ScrollTrigger.min.js"></script>
+  <script defer src="./libs/gsap/ScrollSmoother.min.js"></script>
   <script defer src="./scripts/script.js"></script>
 </body>
 

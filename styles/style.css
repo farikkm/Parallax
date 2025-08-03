@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --index: calc(1vw + 1vh);
+}
+
 html,
 body {
   font-family: "My_Raleway", sans-serif;
@@ -35,14 +39,31 @@ body {
 
 .layer__content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
-  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  transform: translate3d(0, calc(var(--scroll-top) / 4), 0);
+  will-change: transform;
+
+  margin-top: calc((var(--index)) * -2);
+  color: rgb(255, 242, 223);
+  text-shadow: 0 0 15px rgb(251 216 166);
+  ;
 }
 
-.layer__caption {}
+.layer__caption {
+  display: inline-block;
+  font-size: calc(var(--index) / 1.3);
+  letter-spacing: calc(var(--index) / 3);
+  margin-bottom: calc((var(--index)) / 4);
+}
 
-.layer__title {}
+.layer__title {
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 2.25);
+}
 
 .layer {
   height: 100%;
@@ -51,28 +72,48 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 2;
+
   background-size: cover;
   background-position: center;
+
+  will-change: transform;
 }
 
 .layer__base {
   transform: translate3d(0, calc(var(--scroll-top) / 4), 0);
+  z-index: 0;
 }
 
 .layer__middle {
   transform: translate3d(0, calc(var(--scroll-top) / 6), 0);
 }
 
-.layer__front {}
+.layer__front {
+  /* transform: translate3d(0, calc(var(--scroll-top) / 10), 0); */
+}
 
 .about__layer {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.about__content {}
+.about__content {
+  height: 100%;
+}
 
-.about__title {}
+.about__title {
+  font-size: calc(var(--index) * 2.5);
+  letter-spacing: calc(var(--index) / 3);
+}
 
-.about__subtitle {}
+.about__subtitle {
+  max-width: 600px;
+  font-size: calc(var(--index) / 1);
+  margin-bottom: calc((var(--index)) / 4);
+}
